@@ -1,87 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Подключение Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-	<!-- Подключение библиотеки jQuery -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
-    <title>RealCross - Магазин Крестов и Памятников</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealCross — Кресты и памятники</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Контент сайта -->
-	<header class="bg-secondary text-light text-center py-4">
-		<h1>RealCross</h1>
-		<p class="lead">Магазин Крестов и Памятников</p>
-	</header>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Главная</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">О нас</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Товары
-						</a>
-						<div class="dropdown-menu" aria-labelledby="productsDropdown">
-							<a class="dropdown-item" href="products.html">Кресты</a>
-							<a class="dropdown-item" href="products.html">Памятники</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contacts.html">Контакты</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="gallery.html">Галерея</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">RC</span>
+      <div>
+        <h1>RealCross</h1>
+        <p>Кресты и памятники под заказ</p>
+      </div>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню">☰</button>
+    <nav class="nav" id="nav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="products.html">Товары</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
 
-	<main class="container mt-5">
-		<h2>Добро пожаловать в RealCross</h2>
-		<p>Магазин RealCross предлагает широкий выбор крестов и памятников различных стилей и размеров.</p>
-		<img src="images/18d592efc5729b72508aa373ea0796da.jpg" alt="Крест 1" class="img-fluid mt-3">
-		<p>Мы гордимся предоставлять высококачественные изделия для уважения и памяти.</p>
-	</main>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Стиль. Качество. Память.</p>
+        <h2>Авторские кресты и памятники, которые сохранят важные моменты.</h2>
+        <p>Индивидуальные материалы, гравировка, реставрация — всё в одном месте. Прозрачные сроки и персональный подход.</p>
+        <div class="cta">
+          <a class="button primary" href="products.html">Каталог</a>
+          <a class="button ghost" href="contacts.html">Обсудить заказ</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/18d592efc5729b72508aa373ea0796da.jpg" alt="Образец креста RealCross">
+      </div>
+    </section>
 
-	<aside>
-		<!-- Дополнительная информация или виджеты -->
-		<h3>Наши услуги</h3>
-		<ul>
-			<li>Изготовление крестов на заказ</li>
-			<li>Памятники с гравировкой</li>
-			<li>Реставрация старых монументов</li>
-		</ul>
-			<h3>Контакты</h3>
-			<p>Адрес: ул. Примерная, д. 123</p>
-			<p>Телефон: +7 (123) 456-7890</p>
-	</aside>
+    <section class="cards">
+      <article class="card">
+        <h3>Кресты</h3>
+        <p>Деревянные, металлические, гранитные. Индивидуальные размеры, тёплые оттенки, аккуратная отделка.</p>
+      </article>
+      <article class="card">
+        <h3>Памятники</h3>
+        <p>Гранит, мрамор, комбинированные решения. Гравировка, фотокерамика, художественные элементы.</p>
+      </article>
+      <article class="card">
+        <h3>Реставрация</h3>
+        <p>Очистка, обновление надписей, восстановление поверхностей и закрепление фурнитуры.</p>
+      </article>
+    </section>
 
-	<footer class="bg-secondary text-light text-center py-3">
-		&copy; 2023 RealCross
-	</footer>
-	<!-- Подключение Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			// Обработка клика на элементах меню
-			$('.nav-link').click(function() {
-				// Удаляем активный класс у всех элементов меню
-				$('.nav-link').removeClass('active');
-				// Добавляем активный класс только к выбранному элементу
-				$(this).addClass('active');
-			});
-		});
-	</script>
+    <section class="highlight">
+      <div>
+        <h3>С нами просто</h3>
+        <ul>
+          <li>Консультация и подбор материалов</li>
+          <li>Визуализация и утверждение макета</li>
+          <li>Производство и монтаж в срок</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <p>Телефон: <a href="tel:+71234567890">+7 (123) 456-7890</a></p>
+        <p>Адрес: ул. Примерная, д. 123</p>
+        <p>Email: <a href="mailto:info@realcross.ru">info@realcross.ru</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2024 RealCross — знак памяти и уважения.</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
-</html>	
+</html>

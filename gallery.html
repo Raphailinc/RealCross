@@ -1,60 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Подключение Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-    <title>Галерея - RealCross</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея — RealCross</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-secondary text-light text-center py-4">
-        <h1>Галерея</h1>
-    </header>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container">
-            <a class="navbar-brand" href="index.html">Главная</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">О нас</a>
-                    </li>
-                    <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Товары
-						</a>
-						<div class="dropdown-menu" aria-labelledby="productsDropdown">
-							<a class="dropdown-item" href="products.html">Кресты</a>
-							<a class="dropdown-item" href="products.html">Памятники</a>
-						</div>
-					</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-	</nav>
-    <main class="container mt-5">
-        <h2>Фотографии наших работ</h2>
-        <img src="images/18d592efc5729b72508aa373ea0796da.jpg" alt="Галерея 1" class="img-fluid mt-3">
-		<img src="images/0347.jpg" alt="Галерея 2" class="img-fluid mt-3">
-		<img src="images/2307_krest-na-golgofe-1-belyy-.jpg" alt="Галерея 3" class="img-fluid mt-3">
-		<img src="images/images.jpg" alt="Галерея 4" class="img-fluid mt-3">
-		<img src="images/thumb_23043-20.jpg" alt="Галерея 5" class="img-fluid mt-3">
-		<img src="images/памятник-7.jpg" alt="Галерея 6" class="img-fluid mt-3">
-    </main>
-    <aside>
-        <h3>Наши достижения</h3>
-        <p>Мы гордимся нашей работой и множеством удовлетворенных клиентов. Здесь вы можете увидеть наши лучшие работы.</p>
-    </aside>
-    <footer class="bg-secondary text-light text-center py-3">
-        &copy; 2023 RealCross
-    </footer>
-	<!-- Подключение Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">RC</span>
+      <div>
+        <h1>RealCross</h1>
+        <p>Кресты и памятники</p>
+      </div>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню">☰</button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Главная</a>
+      <a href="products.html">Товары</a>
+      <a href="gallery.html" class="active">Галерея</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <div>
+        <p class="eyebrow">Наши работы</p>
+        <h2>Фотографии готовых изделий и проектов.</h2>
+        <p>Реальные объекты, материалы и исполнение.</p>
+      </div>
+    </section>
+
+    <section class="gallery-grid">
+      <figure>
+        <img src="images/18d592efc5729b72508aa373ea0796da.jpg" alt="Деревянный крест">
+        <figcaption>Крест из массива с полировкой</figcaption>
+      </figure>
+      <figure>
+        <img src="images/0347.jpg" alt="Металлический крест">
+        <figcaption>Металлический крест с патиной</figcaption>
+      </figure>
+      <figure>
+        <img src="images/2307_krest-na-golgofe-1-belyy-.jpg" alt="Белый крест">
+        <figcaption>Белый крест на Голгофе</figcaption>
+      </figure>
+      <figure>
+        <img src="images/images.jpg" alt="Каменный крест">
+        <figcaption>Каменный крест с резьбой</figcaption>
+      </figure>
+      <figure>
+        <img src="images/thumb_23043-20.jpg" alt="Гранитный крест">
+        <figcaption>Гранитный крест с полировкой</figcaption>
+      </figure>
+      <figure>
+        <img src="images/памятник-7.jpg" alt="Памятник">
+        <figcaption>Памятник с художественной гравировкой</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2024 RealCross — знак памяти и уважения.</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,55 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Подключение Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-    <title>О нас - RealCross</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании — RealCross</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-secondary text-light text-center py-4">
-        <h1>О нас</h1>
-    </header>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container">
-            <a class="navbar-brand" href="index.html">Главная</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Товары
-						</a>
-						<div class="dropdown-menu" aria-labelledby="productsDropdown">
-							<a class="dropdown-item" href="products.html">Кресты</a>
-							<a class="dropdown-item" href="products.html">Памятники</a>
-						</div>
-					</li>
-                </ul>
-            </div>
-        </div>
-	</nav>
-    <main class="container mt-5">
-        <h2>Наша история</h2>
-        <p>RealCross - это семейный бизнес, специализирующийся на создании крестов и памятников с 1980 года. Мы гордимся нашей историей и качеством наших изделий.</p>
-        <h2>Наши ценности</h2>
-        <p>Мы стремимся к созданию красивых и долговечных памятников, которые помогут сохранить память о ваших близких.</p>
-    </main>
-    <aside class="container mt-5">
-        <h3>Почему выбирают нас</h3>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">RC</span>
+      <div>
+        <h1>RealCross</h1>
+        <p>Кресты и памятники</p>
+      </div>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню">☰</button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Главная</a>
+      <a href="products.html">Товары</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="about.html" class="active">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <div>
+        <p class="eyebrow">Семейный бизнес с 1980 года</p>
+        <h2>Мы создаём памятники, которые переживают поколения.</h2>
+        <p>Ручная работа, честные сроки и уважение к деталям. Каждая история — уникальна, и мы переносим её в форму и материал.</p>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <div>
+        <h3>1980</h3>
+        <p>Открыли мастерскую, работали с деревом и металлом.</p>
+      </div>
+      <div>
+        <h3>1995</h3>
+        <p>Добавили гранит и мрамор, расширили команду резчиков и гравёров.</p>
+      </div>
+      <div>
+        <h3>2010</h3>
+        <p>Собственная линия по фотокерамике и художественной гравировке.</p>
+      </div>
+      <div>
+        <h3>Сегодня</h3>
+        <p>Полный цикл: от эскиза до монтажа, реставрация и обслуживание.</p>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <div>
+        <h3>Ценности</h3>
         <ul>
-            <li>Более 40 лет опыта</li>
-            <li>Индивидуальный подход к каждому клиенту</li>
-            <li>Гарантия качества</li>
+          <li>Честность и прозрачность</li>
+          <li>Аккуратность в деталях</li>
+          <li>Уважение к памяти</li>
         </ul>
-    </aside>
-    <footer class="bg-secondary text-light text-center py-3">
-        &copy; 2023 RealCross
-    </footer>
-	<!-- Подключение Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+      </div>
+      <div>
+        <h3>Команда</h3>
+        <p>Мастера с многолетним опытом: каменщики, резчики, дизайнеры, монтажники.</p>
+        <p>Мы сопровождаем проект от консультации до установки на месте.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2024 RealCross — знак памяти и уважения.</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
