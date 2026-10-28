@@ -15,7 +15,7 @@ if (contactForm) {
     const result = document.getElementById("result");
 
     if (name && email && message) {
-      result.textContent = "Спасибо! Мы свяжемся с вами.";
+      result.textContent = "Демо: поля проверены. Сообщение не отправлено.";
       result.className = "alert success";
       contactForm.reset();
     } else {

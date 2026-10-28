@@ -2,6 +2,8 @@
 
 [English](README.md) · [Русский](README.ru.md)
 
+**Archived learning project.** Preserved as part of my learning history. For current backend work, visit my [profile](https://github.com/Raphailinc).
+
 A static multi-page website portfolio project with a shared visual style and navigation.
 
 ## What it does
