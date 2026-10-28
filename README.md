@@ -1,20 +1,21 @@
-# RealCross — статический сайт
+# RealCross
 
-Обновлённый статический сайт с единой тёмной темой, навигацией и формой обратной связи.
+[English](README.md) · [Русский](README.ru.md)
 
-## Страницы
-- `index.html` — главная (герой, преимущества, контакты).
-- `products.html` — каталог с образцами.
-- `gallery.html` — галерея работ.
-- `about.html` — история и ценности.
-- `contacts.html` — контакты + форма обратной связи.
+A static multi-page website portfolio project with a shared visual style and navigation.
 
-## Запуск
-Просто откройте любую страницу в браузере (зависимостей нет).
+## What it does
 
-## Что добавлено
-- Единый стиль (`style.css`) и навигация с мобильным меню.
-- Упрощённый JS (`main.js`) для бургер-меню и валидации формы.
-- Актуализированный контент и CTA.
+- Browse home, catalog, gallery, about and contact pages.
+- Use mobile navigation.
+- Validate contact-form input in the browser.
 
-При желании раздавайте из любого статического хостинга (GitHub Pages, Netlify и т.п.).
+## Run locally
+
+```bash
+python -m http.server 8000
+```
+
+## Scope and implementation notes
+
+Open `http://localhost:8000`. This is a static frontend demo; the contact form has no server-side delivery service. No automated tests are included.
